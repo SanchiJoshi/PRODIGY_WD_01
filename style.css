@@ -1,0 +1,177 @@
+
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+   /* background-image: url('background1.jpeg'); */
+  /* background-color:rgba(221, 210, 189, 0.9); */
+  background-image: url('https://img.freepik.com/free-vector/soft-brown-watercolor-texture-design-background-vector_1055-10712.jpg');
+  
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center ; 
+    
+}
+
+header {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-image: url(https://media.istockphoto.com/id/1372488781/vector/wood-texture-vector-brown-wooden-background.jpg?s=612x612&w=0&k=20&c=eXQbrqxBXe4VvXXDFXNv0rsDNMUqvXzWJRi7GTYUWXM=);
+    color: white;
+    
+}
+
+
+.logo p{
+
+        font-size: 40px; 
+        font-weight: bold; 
+        margin: 0; 
+    }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    transition: text-shadow 0.1s ease;
+}
+
+nav ul li a:hover {
+    text-shadow: 2px 2px 4px black;
+    color: black;
+}
+
+button {
+    background-image: url(https://w0.peakpx.com/wallpaper/750/864/HD-wallpaper-dark-brown-wood-texture-cherry-wood-texture-wooden-dark-background-natural-textures-thumbnail.jpg) ;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #D2B48C; 
+    background-image: none; 
+}
+
+section {
+    padding: 20px;
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+}
+
+section.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+section.visible {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+#heading {
+    text-align: center;
+    font-size: 100px;
+    padding: 4% 4%;
+    opacity: 0; 
+    animation: fadeIn 1s forwards; /
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+#heading.fade-out {
+    animation: fadeOut 1s forwards; 
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+h2{
+    font-size: 38px; 
+    font-family: 'Merriweather', serif;
+}
+
+.Images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.Images img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(92, 45, 11, 0.5);
+}
+
+p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px; 
+    line-height: 1.6; 
+}
+
+footer {
+    background-color: rgba(221, 210, 189, 0.9);
+    color: black;
+    padding: 1px 5px; 
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 10px; 
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-links li a:hover {
+    color:rgb(101, 101, 83);
+}
+
